@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    background-image: url("https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/background1.jpeg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #ECD18A;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    border: 2px solid #0066cc;
+    background-color: #0066cc;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+h2:hover {
+    background-color: white;
+    color: #0066cc;
+    transform: scale(1.05);
+}
+
+/* Main content area */
+section {
+    padding: 15px;
+    max-width: 400px;
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* This makes the section take up remaining space */
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+article p {
+    line-height: 1.6;
+    text-align: center; /* Center paragraphs */
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Button styles */
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #DB5A00;
+}
+
+/* Website title styles */
+h1 {
+    color: #DB5A00; /* Use one of the specified colors */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Ensure footer stays at the bottom */
+footer {
+    margin-top: auto;
+}

@@ -1,0 +1,28 @@
+<%- include("../partials/header") %>
+    <section>
+        <header>
+            <h1>Manage Users</h1>
+        </header>
+        <% for (let user of users) { %>
+            <article>
+                <header>
+                    <h2><%= user.name %></h2>
+                    <p><strong>Username:</strong> <%= user.username %></p>
+                </header>
+                <p><strong>Email:</strong> <%= user.email %></p>
+                <address>
+                    <strong>Address:</strong> <%= user.address.street %>, <%= user.address.suite %>, <%= user.address.city %>, <%= user.address.zipcode %>
+                </address>
+                <p><strong>Phone:</strong> <%= user.phone %></p>
+                <p><strong>Website:</strong> <a href="http://<%= user.website %>"><%= user.website %></a></p>
+                <p><strong>Company:</strong> <%= user.company.name %></p>
+                <form action="/users/<%= user.id %>/delete" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+                <form action="/users/<%= user.id %>/update" method="POST">
+                    <button type="submit">update</button>
+                </form>
+            </article>
+        <% } %>
+    </section>
+<%- include("../partials/footer") %>

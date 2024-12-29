@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+<h1>Characters</h1>
+<section>
+    <form action="/characters" method="get">
+        <label for="search">Search for a name:</label>
+        <input type="text" id="search" name="q" value="<%= q %>">
+
+        <label for="sortField">Sort by:</label>
+        <select name="sortField">
+            <option value="Names" <%= sortField === "Names" ? "selected" : "" %>>Name</option>
+            <option value="Age" <%= sortField === "Age" ? "selected" : "" %>>Age</option>
+        </select>
+
+        <label for="sortDirection">Sort direction:</label>
+        <select name="sortDirection">
+            <option value="asc" <%= sortDirection === "asc" ? "selected" : "" %>>Ascending</option>
+            <option value="desc" <%= sortDirection === "desc" ? "selected" : "" %>>Descending</option>
+        </select>
+
+        <button type="submit">Apply</button>
+    </form>
+</section>
+<% if (characters.length > 0) { %>
+    <% characters.forEach(character => { %>
+        <section>
+            <article>
+                <a href="/characters/<%= character.ID %>">
+                    <h2><%= character.Names %></h2>
+                    <img src="<%= character.imageUrl %>" alt="Image of <%= character.Names %>" style="width: 300px; height:auto;">
+                </a>
+                <p><strong>Age: </strong><%= character.Age %></p>
+                <p><strong>Description: </strong><%= character.Description %></p>
+            </article>
+        </section>
+    <% }); %>
+<% } else { %>
+    <p>No characters found.</p>
+<% } %>
+<%- include("partials/footer") %>

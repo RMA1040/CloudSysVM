@@ -1,0 +1,202 @@
+[
+  {
+    "ID": "CHAR-0001",
+    "Names": "Blaze Inferno",
+    "Description": "A fiery warrior with a volatile temper and a heart that burns with a passion for justice.",
+    "Age": 39,
+    "Birthday": "04-07-1985",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/FIRE.jpg",
+    "abilities": ["manipulate flames", "summon firestorms", "leave trails of fire in his wake."],
+    "Elements": "Fire - Represents passion, energy, and transformation.",
+    "Weapons": {
+      "weapon_name": "Eternal Flame Lantern",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Eternal_Flame_Lantern.png",
+      "weapon_id": "RWPN-0021",
+      "weapon_power": 805,
+      "Origin": "Inferno Depths",
+      "description": "This Eternal Flame Lantern is a mystical artifact that serves as an unquenchable source of power, casting light and igniting flames even in the deepest darkness. Can be used by any element.",
+      "downside": "This makes the user visible at all times which doesn't help in stealth missions."
+    }
+  },
+  {
+    "ID": "CHAR-0002",
+    "Names": "Marina Tide",
+    "Description": "A serene and graceful guardian of the waters.",
+    "Age": 32,
+    "Birthday": "22-03-1992",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/WATER.jpg",
+    "abilities": ["control water", "summon tidal waves", " heal wounds"],
+    "Elements": "Water - Symbolizes fluidity, emotion, and healing.",
+    "Weapons": {
+      "weapon_name": "Aqua Regis Crown",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Aqua_Regis_Crown.png",
+      "weapon_id": "RWPN-0022",
+      "weapon_power": 45,
+      "Origin": "Oceanic Nexus",
+      "description": " The Aqua Regis Crown is an ancient artifact with the profound ability to attract water, drawing moisture from the air to create water at the wearer's command. Can only be used by water element.",
+      "downside": "The crown is very light and can only by used while on the user's head which makes it dangerous to wear in combat and not very practical. Can only be used by water element."
+    }
+  },
+  {
+    "ID": "CHAR-0003",
+    "Names": "Terra Stoneheart",
+    "Description": "A steadfast and resilient defender of the earth.",
+    "Age": 49,
+    "Birthday": "15-10-1975",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/EARTH.jpg",
+    "abilities": ["manipulate the ground", "create protective barriers of stone", "cause earthquakes to deter foes"],
+    "Elements": "Embodies stability, strength, and growth.",
+    "Weapons": {
+      "weapon_name": "Gauntlets of Earthen Might",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Gauntlets_of_Earthen_Might.png",
+      "weapon_id": "RWPN-0023",
+      "weapon_power": 504,
+      "Origin": "Mountain Core",
+      "description": "The Gauntlets of Earthen Might are powerful artifacts that amplify the user's physical strength. Can be used by any element.",
+      "downside": "Overuse may cause temporary paralysis of hands."
+    }
+  },
+  {
+    "ID": "CHAR-0004",
+    "Names": "Zephyr Gale",
+    "Description": "A swift and intelligent master of the winds.",
+    "Age": 36,
+    "Birthday": "01-04-1988",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/WIND.jpg",
+    "abilities": ["command the air to create powerful gusts", "form tornadoes", "fly by riding air currents"],
+    "Elements": "Air - Signifies freedom, intelligence, and communication.",
+    "Weapons": {
+      "weapon_name": "Graviton Step",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Graviton_Step.png",
+      "weapon_id": "RWPN-0025",
+      "weapon_power": 110,
+      "Origin": "Celestial Vault",
+      "description": " The Graviton Step shoes are remarkable artifacts capable of altering gravitational forces around the user. This allows to adhere to any surface, defy gravity for aerial maneuvers, or increase his weight for impactful strikes. Can be used by any element.",
+      "downside": "Change in gravitational forces cause nausea and temporarily loss of spatial awareness."
+    }
+  },
+  {
+    "ID": "CHAR-0005",
+    "Names": "Solara Dawn",
+    "Description": "A beacon of light in the darkest times.",
+    "Age": 31,
+    "Birthday": "21-06-1993",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/LIGHT.jpg",
+    "abilities": ["illuminate", "blind enemies with flashes", "heal"],
+    "Elements": "Light - Conveys purity, truth, and enlightenment.",
+    "Weapons": {
+      "weapon_name": "Veil of Light",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Veil_of_Light.png",
+      "weapon_id": "RWPN-0026",
+      "weapon_power": 836,
+      "Origin": "Sunspire Sanctum",
+      "description": "The Veil of Light is a luminous suit that, paradoxically, allows user to bend light around her, rendering user invisible to the naked eye for 60 seconds. Can only be used by light element.",
+      "downside": "Is not water resilient and will electrocute user if in heavy contact with water."
+    }
+  },
+  {
+    "ID": "CHAR-0006",
+    "Names": "Noctis Shade",
+    "Description": "A mysterious figure who thrives in the shadows.",
+    "Age": 42,
+    "Birthday": "31-10-1982",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/DARK.jpg",
+    "abilities": ["blend into darkness", "manipulate dark energy to confound and weaken enemies", "travel through shadows to appear anywhere unannounced"],
+    "Elements": "Darkness - Represents mystery, power, and the unknown.",
+    "Weapons": {
+      "weapon_name": "Shadowstrike Dagger",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Shadowstrike_Dagger.png",
+      "weapon_id": "RWPN-0027",
+      "weapon_power": 282,
+      "Origin": "Dusk Hollow",
+      "description": "The Shadowstrike Dagger is a lethal artifact designed for precision and agility in close quarters. Infused with the essence of shadows, it grants Noctis Shade enhanced combat capabilities, allowing him to strike swiftly and blend back into the darkness with ease. Can be used by every element.",
+      "downside": "Use of dagger will poison your blood and slow you down for 30 minutes."
+    }
+  },
+  {
+    "ID": "CHAR-0007",
+    "Names": "Frostine Glacial",
+    "Description": "A cool and composed ice wielder.",
+    "Age": 34,
+    "Birthday": "11-12-1990",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/ICE.jpg",
+    "abilities": ["freeze anything with a touch", "summon blizzards", "create ice constructs for offense and defense"],
+    "Elements": "Ice - Symbolizes clarity, resilience, and stasis.",
+    "Weapons": {
+      "weapon_name": "Heartfire Amulet",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Heartfire_Amulet.png",
+      "weapon_id": "RWPN-0028",
+      "weapon_power": 155,
+      "Origin": "Glacier Peak",
+      "description": "The Heartfire Amulet is a unique artifact imbued with a perpetual warmth, safeguarding Frostine Glacial against the chilling effects of her own ice powers. Can be used by any element.",
+      "downside": "Can possibly explode if overheated. (if fire element would put this on)."
+    }
+  },
+  {
+    "ID": "CHAR-0008",
+    "Names": "Volt Sparkflash",
+    "Description": "An energetic and unpredictable wielder of lightning.",
+    "Age": 29,
+    "Birthday": "17-05-1995",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/LIGHTNING.jpg",
+    "abilities": ["generate electric shocks", "move at lightning speed", "call down thunderstorms"],
+    "Elements": "Lightning - Denotes speed, unpredictability, and electrical power.",
+    "Weapons": {
+      "weapon_name": "Thunderbolt Arsenal",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Thunderbolt_Arsenal.png",
+      "weapon_id": "RWPN-0029",
+      "weapon_power": 500,
+      "Origin": "Stormheart Forge",
+      "description": "The Thunderbolt Arsenal is a cutting-edge piece of technology and magic, consisting of a high-capacity battery backpack that harvests and stores electrical energy, connected to a powerful cannon capable of firing concentrated blasts of electricity. Can be used by any element.",
+      "downside": "Very flammable and unprotected. If hit it will explode before user can take it off."
+    }
+  },
+  {
+    "ID": "CHAR-0009",
+    "Names": "Ferrus Gearhart",
+    "Description": "A tough and resourceful metal manipulator.",
+    "Age": 44,
+    "Birthday": "29-08-1980",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/METAL.jpg",
+    "abilities": ["shape metal at will", "craft weapons and armor mid-battle", "near-impenetrable metallic skin"],
+    "Elements": "Metal - Embodies durability, craftsmanship, and precision.",
+    "Weapons": {
+      "weapon_name": "Aeronaut's Exosuit",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Aeronaut's_Exosuit.png",
+      "weapon_id": "RWPN-0030",
+      "weapon_power": 524,
+      "Origin": "Iron Summit",
+      "description": "The Aeronaut's Exosuit is an advanced piece of machinery that combines the toughness of metal with the freedom of flight. Equipped with a powerful jetpack, this exosuit allows Ferrus Gearhart to soar through the skies, offering him unparalleled mobility and tactical advantages. Can be used by any element.",
+      "downside": "While in full use retracting shield takes 4 seconds where user is vulnerable."
+    }
+  },
+  {
+    "ID": "CHAR-0010",
+    "Names": "Flora Greenwhisper",
+    "Description": "A gentle soul with a deep connection to nature.",
+    "Age": 28,
+    "Birthday": "30-04-1996",
+    "isAlive": true,
+    "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/NATURE.jpg",
+    "abilities": ["communicate with plants", "create plant barriers and weapons", "summon woodland creatures to aid her"],
+    "Elements": "Nature - Represents life, interconnectedness, and renewal.",
+    "Weapons": {
+      "weapon_name": "Blossom Barrier",
+      "imageUrl": "https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-RMA1040/main/.project/assets/images/Blossom_Barrier.png",
+      "weapon_id": "RWPN-0031",
+      "weapon_power": 700,
+      "Origin": "Verdant Vale",
+      "description": "A magical shield that can expand to protect large areas or contract for focused defense. Additionally, this unique artifact has the ability to absorb various elemental energies, turning potential threats into nourishment for its wielder. Can only be used by Nature element.",
+      "downside": "While in full use retracting shield takes 4 seconds where user is vulnerable."
+    }
+  }
+]

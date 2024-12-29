@@ -1,0 +1,38 @@
+<%- include("partials/header") %>
+<h1>Weapons</h1>
+<section>
+    <form action="/weapons" method="get">
+        <label for="search">Search for a name:</label>
+        <input type="text" id="search" name="q" value="<%= q %>">
+
+        <label for="sortField">Sort by:</label>
+        <select name="sortField">
+            <option value="weapon_name" <%= sortField === "weapon_name" ? "selected" : "" %>>Name</option>
+            <option value="weapon_power" <%= sortField === "weapon_power" ? "selected" : "" %>>Power</option>
+        </select>
+
+        <label for="sortDirection">Sort direction:</label>
+        <select name="sortDirection">
+            <option value="asc" <%= sortDirection === "asc" ? "selected" : "" %>>Ascending</option>
+            <option value="desc" <%= sortDirection === "desc" ? "selected" : "" %>>Descending</option>
+        </select>
+
+        <button type="submit">Apply</button>
+    </form>
+</section>
+<% if (weapons.length > 0) { %>
+    <% weapons.forEach(weapon => { %>
+        <section>
+            <article>
+                <a href="/weapons-detail/<%= weapon.weapon_id %>">
+                    <h2><%= weapon.weapon_name %></h2>
+                    <img src="<%= weapon.imageUrl %>" alt="Image of <%= weapon.weapon_name %>" style="width: 300px; height:auto;">
+                </a>
+                <p><strong>Power Level: </strong><%= weapon.weapon_power %></p>
+            </article>
+        </section>
+    <% }); %>
+<% } else { %>
+    <p>No weapons found.</p>
+<% } %>
+<%- include("partials/footer") %>

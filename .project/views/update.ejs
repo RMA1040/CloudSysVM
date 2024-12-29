@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+<h1>Update Character</h1>
+<section>
+    <form action="/characters/<%= character.ID %>/update" method="POST">
+        <div>
+            <label for="Names">Name:</label>
+            <input type="text" id="Names" name="Names" value="<%= character.Names %>">
+        </div>
+        <div>
+            <label for="isAlive">Alive:</label>
+            <input type="checkbox" id="isAlive" name="Alive" <% if (character.isAlive) { %>checked<% } %>>
+        </div>
+        <div>
+            <label for="Description">Description:</label>
+            <textarea id="Description" name="Description" rows="4" cols="50"><%= character.Description %></textarea>
+        </div>
+        <div>
+            <label for="abilities">Abilities:</label>
+            <input type="text" id="abilities" name="abilities" value="<%= Array.isArray(character.abilities) ? character.abilities.join(', ') : '' %>">
+        </div>
+        <button type="submit">Update character</button>
+    </form>
+</section>
+<%- include("partials/footer") %>
