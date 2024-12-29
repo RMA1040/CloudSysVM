@@ -1,6 +1,5 @@
-name: Deploy Application
+name: Deploy to Azure VM
 
-# Trigger the workflow on push to the main branch
 on:
   push:
     branches:
@@ -11,21 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout code from the repository
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      # Set up SSH key (if you're deploying to a remote server using SSH)
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    - name: Set up SSH key
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      # Example of using secrets in the deployment process
-      - name: Deploy to Remote Server
-        run: |
-          # Example deployment command, such as copying files to a remote server
-          scp -r ./dist/* azureuser@20.86.133.25:/path/to/your/remote/directory/
-          
-          # Additional deploy commands (e.g., SSH into the server and run deployment commands)
-          ssh azureuser@20.86.133.25 "cd /path/to/your/remote/directory && ./deploy.sh"
+    - name: Add SSH host key to known_hosts
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan -H 20.86.133.25 >> ~/.ssh/known_hosts
+
+    - name: Deploy to Azure VM
+      run: |
+        ssh azureuser@20.86.133.25 'your-deployment-command-here'
