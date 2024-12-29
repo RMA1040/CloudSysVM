@@ -22,6 +22,8 @@ jobs:
       run: |
         mkdir -p ~/.ssh
         ssh-keyscan -H 20.86.133.25 >> ~/.ssh/known_hosts
+        # Ensure correct file permissions for known_hosts
+        chmod 644 ~/.ssh/known_hosts
 
     - name: Deploy to Azure VM
       run: |
